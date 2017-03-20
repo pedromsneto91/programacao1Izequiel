@@ -18,6 +18,13 @@ public class Casa {
     private boolean temCerca;
     private boolean temCameras;
     private boolean eNova;
+    private boolean carroDaCasa;
+    
+    Carro car1 = new Carro();
+    
+    public void mensagemParaCarro(){
+        System.out.println("Oi, carro, eu sei que você tem um motor de " + this.car1.getMotor() + " litros.");
+    }
     
     public void estado(){
         System.out.println("Comodos: " + this.comodos);
@@ -27,5 +34,8 @@ public class Casa {
         System.out.println("Tem cerca? " + this.temCerca);
         System.out.println("Tem câmeras? " + this.temCameras);
         System.out.println("É nova? " + this.eNova);
+        System.out.println();
+        car1.setMotor(1.6);
+        
     }
 }
